@@ -1,0 +1,68 @@
+body {
+  color: #fff;
+  background-image: url("../images/Bg_1536.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align: center;
+  margin: 0;
+  width: 100%; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+.logo {
+  margin: 15% 10% 8%; }
+
+.buttons a {
+  text-decoration: none; }
+.buttons .btn {
+  width: 260px;
+  padding: 12px 0;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #5FA315;
+  background: -webkit-linear-gradient(180deg, #BFDA1B 0%, #5FA315 100%);
+  background: -ms-linear-gradient(180deg, #BFDA1B 0%, #5FA315 100%);
+  background: -moz-linear-gradient(180deg, #BFDA1B 0%, #5FA315 100%);
+  background: linear-gradient(180deg, #BFDA1B 0%, #5FA315 100%);
+  box-shadow: inset 1px 1px 1px 0 rgba(255, 255, 255, 0.15), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+  color: #fff;
+  font-weight: 600; }
+  .buttons .btn.Eng {
+    margin-top: 15px; }
+  .buttons .btn:hover {
+    cursor: pointer; }
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 5%; }
+  .footer .webLink {
+    margin-bottom: 40px; }
+    .footer .webLink a {
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold; }
+  .footer .footer-txt {
+    font-size: 12px; }
+
+@media (max-width: 1240px) {
+  body {
+    background-image: url("../images/Bg_768.png"); } }
+@media (min-width: 768px) {
+  .logo {
+    margin-top: 20%; } }
+@media (max-width: 960px) {
+  body {
+    background-image: url("../images/mobilebg_960.png"); } }
+@media (max-width: 640px) {
+  body {
+    background-image: url("../images/mobilebg_640.png"); } }
+@media (max-width: 320px) {
+  body {
+    background-image: url("../images/mobilebg_320.png"); } }
+
+/*# sourceMappingURL=Brochure.css.map */
