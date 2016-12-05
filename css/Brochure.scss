@@ -19,25 +19,41 @@
         @content;
     }
 }
-@mixin basic-screen {
+
+/* Phone */
+@mixin phone {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin phone-portrait {
+    @media (max-width: 767px) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin phone-landscape {
+    @media (max-width: 767px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+/* Pad */
+@mixin pad {
     @media (min-width: 768px) {
         @content;
     }
 }
 
+@mixin pad-portrait {
+    @media (min-width: 767px) and (orientation: portrait) {
+        @content;
+    }
+}
 
-@mixin small-height {
-    @media (max-height : 500px) {
-        @content;
-    }
-}
-@mixin phone-height {
-    @media (min-height: 501px) and (max-height : 780px) {
-        @content;
-    }
-}
-@mixin pad-height {
-    @media (max-height: 1024px) {
+@mixin pad-landscape {
+    @media (min-width: 768px) and (orientation: landscape) {
         @content;
     }
 }
@@ -62,11 +78,9 @@ body{
     }
     @include small-screen {
         background-image: url("../images/mobilebg_640.png");
-        // font-size: 20px;
     }
     @include xsmall-screen {
         background-image: url("../images/mobilebg_320.png");
-        // font-size: 20px;
     }    
 
 }
@@ -77,19 +91,29 @@ img{
 }
 .content{
     padding: 20% 20%;
-    @include phone-height {
+    @include phone {
         padding: 30% 10%;
     }
-    @include small-height {
-        padding: 10% 10%;
+    @include phone-portrait {
+        padding: 30% 10%;
     }
-    // @include pad-height {
-    //     padding: 20% 20%;
-    // }    
+    @include phone-landscape {
+        padding: 10% 30%;
+    }
+    @include pad {
+        padding: 25% 20%;
+    }
+    @include pad-portrait {
+        padding: 25% 20%;
+    }
+    @include pad-landscape {
+        padding: 10% 30%;
+    }
+
 }
 
 .logo{
-    margin-bottom: 10%;
+    margin-bottom: 16%;
     .tgpLogo{
         width: 100%;
     }   
@@ -113,30 +137,21 @@ img{
         font-weight: 600;
         font-size: 18px;       
         &.Eng{
-            margin-top: 4%;
+            margin-top: 20px;
         }
         &:hover{
             cursor: pointer;
         }
-
-        // @include normal-screen {
-        //     width: 30%;
-        // }
-
-        // @include big-screen {        
-        //     width: 360px;       
-        // }
     }
 }
 .footer{
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 5%;
     -webkit-transform: translateZ(0);           
     .container{
         margin: 0 auto;
         &:before, &:after {
-            content: " ";
             display: table;
         }
         &:after {
