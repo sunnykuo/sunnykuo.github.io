@@ -1,4 +1,46 @@
 // @import "components/_loading.scss";
+@mixin big-screen {
+    @media (min-width: 961px),(min-device-width: 961px) {
+        @content;
+    }
+}
+@mixin normal-screen {
+    @media (min-width: 641px) and (max-width: 960px), (min-device-width: 641px) and (max-device-width: 960px)  {
+        @content;
+    }
+}
+@mixin small-screen {
+    @media (min-width: 321px) and (max-width: 640px), (min-device-width: 321px) and (max-device-width: 640px) {
+        @content;
+    }
+}
+@mixin xsmall-screen {
+    @media (max-width: 320px),(max-device-width: 320px)  {
+        @content;
+    }
+}
+@mixin basic-screen {
+    @media (min-width: 768px),(min-device-width: 768px)  {
+        @content;
+    }
+}
+
+
+@mixin small-height {
+    @media (max-height : 500px),(max-device-height: 500px)  {
+        @content;
+    }
+}
+@mixin phone-height {
+    @media (min-height: 501px) and (max-height : 780px), (min-device-height: 501px) and (max-device-height: 780px)  {
+        @content;
+    }
+}
+@mixin pad-height {
+    @media (max-height: 1024px),(max-device-height: 1024px)  {
+        @content;
+    }
+}
 
 body{
     color: #fff;
@@ -10,23 +52,68 @@ body{
     text-align: center;
     margin: 0;
     width: 100%;
+    font-size: 12px;
+
+    @include big-screen {
+        background-image: url("../images/Bg_768.png");
+    }
+    @include normal-screen {
+        background-image: url("../images/mobilebg_960.png");
+    }
+    @include small-screen {
+        background-image: url("../images/mobilebg_640.png");
+        // font-size: 20px;
+    }
+    @include xsmall-screen {
+        background-image: url("../images/mobilebg_320.png");
+        // font-size: 20px;
+    }    
+
 }
 
 img{
     border: 0;
     vertical-align: middle;
 }
+.content{
+    padding: 15% 0;
+    @include phone-height {
+        padding: 30% 0;
+    }
+    @include small-height {
+        padding: 10% 0;
+    }
+    @include pad-height {
+        padding: 20% 0;
+    }    
+}
+
 .logo{
-    margin: 15% 10% 8%;
-    // margin: 30px;
+    margin: 0 10% 8%;
+    .tgpLogo{
+        width: 100%;
+    }
+    @include normal-screen {
+        .tgpLogo{
+            width: 60%;
+        }
+    }
+    @include big-screen {
+        .tgpLogo{
+            width: 60%;
+        }        
+    }
+    @include small-height {
+
+    }    
 }
 .buttons{
     a{
         text-decoration: none;
     }
     .btn{
-        width: 260px;
-        padding: 12px 0;
+        width: 60%;
+        padding: 3% 10%;
         margin: 0 auto;        
         border-radius: 5px;
         background-color: #5FA315;
@@ -36,61 +123,49 @@ img{
         background: linear-gradient(180deg, #BFDA1B 0%, #5FA315 100%);
         box-shadow: inset 1px 1px 1px 0 rgba(255,255,255,0.15), 0 2px 4px 0 rgba(0,0,0,0.19);
         color: #fff;
-        font-weight: 600;       
+        font-weight: 600;
+        font-size: 18px;       
         &.Eng{
-            margin-top: 15px;
+            margin-top: 4%;
         }
         &:hover{
             cursor: pointer;
+        }
+
+        @include normal-screen {
+            width: 360px;
+        }
+
+        @include big-screen {        
+            width: 360px;       
         }
     }
 }
 .footer{
     width: 100%;
-    position: fixed;
+    position: absolute;
     bottom: 5%;
-    // margin: 10px 10px;
-    .webLink{
-        margin-bottom: 40px;
-        a{
-            color: #fff;
-            font-size: 18px;
-            font-weight: bold;
+    -webkit-transform: translateZ(0);           
+    .container{
+        margin: 0 auto;
+        &:before, &:after {
+            content: " ";
+            display: table;
         }
-    }    
-    .footer-txt{
-        font-size: 12px; 
-        // margin: 0 auto;
-    }
-}
-
-@media (max-width: 1240px) {
-    body{
-        background-image: url("../images/Bg_768.png");
-    }
-}
-
-@media (min-width: 768px) {
-    .logo{
-        margin-top: 20%;
-    } 
-}
-
-@media (max-width: 960px) {
-    body{
-        background-image: url("../images/mobilebg_960.png");
-    }
-}
-
-@media (max-width: 640px) {
-    body{
-        background-image: url("../images/mobilebg_640.png");
-    }
-}
-
-@media (max-width: 320px) {
-    body{
-        background-image: url("../images/mobilebg_320.png");
+        &:after {
+            clear: both;
+        }
+        .webLink{
+            margin-bottom: 5%;
+            a{
+                color: #fff;
+                font-size: 20px;
+            }
+        }    
+        .footer-txt{
+            font-size: 12px;
+            margin: 0 30px;
+        }        
     }
 }
 

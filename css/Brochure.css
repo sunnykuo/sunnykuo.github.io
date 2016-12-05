@@ -7,20 +7,53 @@ body {
   background-attachment: fixed;
   text-align: center;
   margin: 0;
-  width: 100%; }
+  width: 100%;
+  font-size: 12px; }
+  @media (min-width: 961px), (min-device-width: 961px) {
+    body {
+      background-image: url("../images/Bg_768.png"); } }
+  @media (min-width: 641px) and (max-width: 960px), (min-device-width: 641px) and (max-device-width: 960px) {
+    body {
+      background-image: url("../images/mobilebg_960.png"); } }
+  @media (min-width: 321px) and (max-width: 640px), (min-device-width: 321px) and (max-device-width: 640px) {
+    body {
+      background-image: url("../images/mobilebg_640.png"); } }
+  @media (max-width: 320px), (max-device-width: 320px) {
+    body {
+      background-image: url("../images/mobilebg_320.png"); } }
 
 img {
   border: 0;
   vertical-align: middle; }
 
+.content {
+  padding: 15% 0; }
+  @media (min-height: 501px) and (max-height: 780px), (min-device-height: 501px) and (max-device-height: 780px) {
+    .content {
+      padding: 30% 0; } }
+  @media (max-height: 500px), (max-device-height: 500px) {
+    .content {
+      padding: 10% 0; } }
+  @media (max-height: 1024px), (max-device-height: 1024px) {
+    .content {
+      padding: 20% 0; } }
+
 .logo {
-  margin: 15% 10% 8%; }
+  margin: 0 10% 8%; }
+  .logo .tgpLogo {
+    width: 100%; }
+  @media (min-width: 641px) and (max-width: 960px), (min-device-width: 641px) and (max-device-width: 960px) {
+    .logo .tgpLogo {
+      width: 60%; } }
+  @media (min-width: 961px), (min-device-width: 961px) {
+    .logo .tgpLogo {
+      width: 60%; } }
 
 .buttons a {
   text-decoration: none; }
 .buttons .btn {
-  width: 260px;
-  padding: 12px 0;
+  width: 60%;
+  padding: 3% 10%;
   margin: 0 auto;
   border-radius: 5px;
   background-color: #5FA315;
@@ -30,39 +63,38 @@ img {
   background: linear-gradient(180deg, #BFDA1B 0%, #5FA315 100%);
   box-shadow: inset 1px 1px 1px 0 rgba(255, 255, 255, 0.15), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
   color: #fff;
-  font-weight: 600; }
+  font-weight: 600;
+  font-size: 18px; }
   .buttons .btn.Eng {
-    margin-top: 15px; }
+    margin-top: 4%; }
   .buttons .btn:hover {
     cursor: pointer; }
+  @media (min-width: 641px) and (max-width: 960px), (min-device-width: 641px) and (max-device-width: 960px) {
+    .buttons .btn {
+      width: 360px; } }
+  @media (min-width: 961px), (min-device-width: 961px) {
+    .buttons .btn {
+      width: 360px; } }
 
 .footer {
   width: 100%;
-  position: fixed;
-  bottom: 5%; }
-  .footer .webLink {
-    margin-bottom: 40px; }
-    .footer .webLink a {
-      color: #fff;
-      font-size: 18px;
-      font-weight: bold; }
-  .footer .footer-txt {
-    font-size: 12px; }
-
-@media (max-width: 1240px) {
-  body {
-    background-image: url("../images/Bg_768.png"); } }
-@media (min-width: 768px) {
-  .logo {
-    margin-top: 20%; } }
-@media (max-width: 960px) {
-  body {
-    background-image: url("../images/mobilebg_960.png"); } }
-@media (max-width: 640px) {
-  body {
-    background-image: url("../images/mobilebg_640.png"); } }
-@media (max-width: 320px) {
-  body {
-    background-image: url("../images/mobilebg_320.png"); } }
+  position: absolute;
+  bottom: 5%;
+  -webkit-transform: translateZ(0); }
+  .footer .container {
+    margin: 0 auto; }
+    .footer .container:before, .footer .container:after {
+      content: " ";
+      display: table; }
+    .footer .container:after {
+      clear: both; }
+    .footer .container .webLink {
+      margin-bottom: 5%; }
+      .footer .container .webLink a {
+        color: #fff;
+        font-size: 20px; }
+    .footer .container .footer-txt {
+      font-size: 12px;
+      margin: 0 30px; }
 
 /*# sourceMappingURL=Brochure.css.map */
