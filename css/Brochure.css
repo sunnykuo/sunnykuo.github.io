@@ -38,7 +38,7 @@ img {
       padding: 30% 10%; } }
   @media (max-width: 767px) and (orientation: landscape) {
     .content {
-      padding: 10% 30%; } }
+      padding: 5% 30%; } }
   @media (min-width: 768px) {
     .content {
       padding: 25% 20%; } }
@@ -72,7 +72,7 @@ img {
     font-weight: 600;
     font-size: 18px; }
     .buttons .btn.Eng {
-      margin-top: 20px; }
+      margin-top: 5%; }
     .buttons .btn:hover {
       cursor: pointer; }
 

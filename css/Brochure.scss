@@ -98,7 +98,7 @@ img{
         padding: 30% 10%;
     }
     @include phone-landscape {
-        padding: 10% 30%;
+        padding: 5% 30%;
     }
     @include pad {
         padding: 25% 20%;
@@ -137,7 +137,7 @@ img{
         font-weight: 600;
         font-size: 18px;       
         &.Eng{
-            margin-top: 20px;
+            margin-top: 5%;
         }
         &:hover{
             cursor: pointer;
