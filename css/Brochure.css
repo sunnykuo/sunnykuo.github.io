@@ -60,7 +60,7 @@ img {
   .buttons a {
     text-decoration: none; }
   .buttons .btn {
-    padding: 4% 10%;
+    padding: 15px 10%;
     margin: 0 auto;
     border-radius: 5px;
     background-color: #5FA315;
@@ -74,7 +74,8 @@ img {
     font-size: 18px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
     .buttons .btn.Eng {
-      margin-top: 5%; }
+      margin-top: 5%;
+      padding: 16px 10%; }
     .buttons .btn:hover {
       cursor: pointer; }
 
