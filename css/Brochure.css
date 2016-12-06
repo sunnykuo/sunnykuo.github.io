@@ -60,7 +60,9 @@ img {
   .buttons a {
     text-decoration: none; }
   .buttons .btn {
-    padding: 15px 10%;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 10%;
     margin: 0 auto;
     border-radius: 5px;
     background-color: #5FA315;
@@ -74,16 +76,13 @@ img {
     font-size: 18px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
     .buttons .btn.Eng {
-      margin-top: 5%;
-      padding: 16px 10%; }
-      @media (max-width: 767px) and (orientation: landscape) {
-        .buttons .btn.Eng {
-          padding: 11px 10%; } }
+      margin-top: 5%; }
     .buttons .btn:hover {
       cursor: pointer; }
-    @media (max-width: 767px) and (orientation: landscape) {
+    @media (min-width: 768px) {
       .buttons .btn {
-        padding: 10px 10%; } }
+        height: 55px;
+        line-height: 55px; } }
 
 .footer {
   width: 100%;

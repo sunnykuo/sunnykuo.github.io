@@ -125,7 +125,9 @@ img{
         text-decoration: none;
     }
     .btn{
-        padding: 15px 10%;
+        height: 45px;
+        line-height: 45px;
+        padding: 0 10%;
         margin: 0 auto;        
         border-radius: 5px;
         background-color: #5FA315;
@@ -139,17 +141,14 @@ img{
         font-size: 18px;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         &.Eng{
-            margin-top: 5%;
-            padding: 16px 10%;
-            @include phone-landscape {
-                padding: 11px 10%;
-            }             
+            margin-top: 5%;            
         }
         &:hover{
             cursor: pointer;
         }
-        @include phone-landscape {
-            padding: 10px 10%;
+        @include pad {
+            height: 55px;
+            line-height: 55px;            
         }         
     }
 }
