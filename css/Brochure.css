@@ -49,6 +49,12 @@ img {
   @media (min-width: 768px) and (orientation: landscape) {
     .content {
       padding: 10% 30%; } }
+  @media (min-width: 2000px) and (orientation: landscape) {
+    .content {
+      padding: 5% 40%; } }
+  @media (max-height: 200px) and (orientation: landscape) {
+    .content {
+      padding: 5% 40%; } }
 
 .logo {
   margin-bottom: 16%; }
@@ -103,10 +109,16 @@ img {
       @media (max-width: 767px) and (orientation: landscape) {
         .footer .container .webLink {
           margin-bottom: 1%; } }
+      @media (min-width: 768px) and (orientation: landscape) {
+        .footer .container .webLink {
+          margin-bottom: 1%; } }
     .footer .container .footer-txt {
       font-size: 12px;
       margin: 0 30px; }
   @media (max-width: 767px) and (orientation: landscape) {
+    .footer {
+      bottom: 1%; } }
+  @media (min-width: 768px) and (orientation: landscape) {
     .footer {
       bottom: 1%; } }
 

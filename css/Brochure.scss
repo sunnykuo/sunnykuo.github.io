@@ -58,6 +58,18 @@
     }
 }
 
+@mixin landscape {
+    @media (min-width: 2000px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin height-landscape {
+    @media (max-height: 200px) and (orientation: landscape) {
+        @content;
+    }
+}
+
 body{
     font-family: 'Lato';
     color: #fff;
@@ -109,6 +121,12 @@ img{
     }
     @include pad-landscape {
         padding: 10% 30%;
+    }
+    @include landscape {
+        padding: 5% 40%;
+    }
+    @include height-landscape {
+        padding: 5% 40%;
     }
 
 }
@@ -173,7 +191,10 @@ img{
             }
             @include phone-landscape {
                 margin-bottom: 1%;
-            }            
+            }   
+            @include pad-landscape {
+                margin-bottom: 1%;
+            }                         
         }    
         .footer-txt{
             font-size: 12px;
@@ -182,6 +203,9 @@ img{
     }
     @include phone-landscape {
         bottom: 1%;
-    }      
+    }
+    @include pad-landscape {
+        bottom: 1%;
+    }          
 }
 
