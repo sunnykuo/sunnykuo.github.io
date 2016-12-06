@@ -172,12 +172,6 @@ img{
     -webkit-transform: translateZ(0);           
     .container{
         margin: 0 auto;
-        &:before, &:after {
-            display: table;
-        }
-        &:after {
-            clear: both;
-        }
         .webLink{
             margin-bottom: 5%;
             a{
