@@ -61,7 +61,7 @@ img {
     text-decoration: none; }
   .buttons .btn {
     height: 45px;
-    line-height: 43px;
+    line-height: 45px;
     padding: 0 10%;
     margin: 0 auto;
     border-radius: 5px;
@@ -82,7 +82,7 @@ img {
     @media (min-width: 768px) {
       .buttons .btn {
         height: 55px;
-        line-height: 53px; } }
+        line-height: 55px; } }
 
 .footer {
   width: 100%;
