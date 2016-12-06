@@ -3,7 +3,7 @@
 body {
   font-family: 'Lato';
   color: #fff;
-  background-image: url("../images/Bg_1536.png");
+  background-image: url("../images/Bg_768.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -14,7 +14,7 @@ body {
   font-size: 12px; }
   @media (min-width: 961px) {
     body {
-      background-image: url("../images/Bg_768.png"); } }
+      background-image: url("../images/Bg_1536.png"); } }
   @media (min-width: 641px) and (max-width: 960px) {
     body {
       background-image: url("../images/mobilebg_960.png"); } }

@@ -1,4 +1,4 @@
-// @import "components/_loading.scss";
+
 @mixin big-screen {
     @media (min-width: 961px) {
         @content;
@@ -61,7 +61,7 @@
 body{
     font-family: 'Lato';
     color: #fff;
-    background-image: url("../images/Bg_1536.png");
+    background-image: url("../images/Bg_768.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -72,7 +72,7 @@ body{
     font-size: 12px;
 
     @include big-screen {
-        background-image: url("../images/Bg_768.png");
+        background-image: url("../images/Bg_1536.png");
     }
     @include normal-screen {
         background-image: url("../images/mobilebg_960.png");
