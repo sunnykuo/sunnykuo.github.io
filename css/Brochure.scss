@@ -58,14 +58,8 @@
     }
 }
 
-@mixin landscape {
-    @media (min-width: 2000px) and (orientation: landscape) {
-        @content;
-    }
-}
-
 @mixin height-landscape {
-    @media (max-height: 200px) and (orientation: landscape) {
+    @media (max-height: 310px) and (orientation: landscape) {
         @content;
     }
 }
@@ -122,11 +116,8 @@ img{
     @include pad-landscape {
         padding: 10% 30%;
     }
-    @include landscape {
-        padding: 5% 40%;
-    }
     @include height-landscape {
-        padding: 5% 40%;
+        padding: 1% 30%;
     }
 
 }
@@ -145,7 +136,7 @@ img{
     .btn{
         height: 45px;
         line-height: 45px;
-        padding: 0 10%;
+        padding: 0;
         margin: 0 auto;        
         border-radius: 5px;
         background-color: #5FA315;
@@ -167,6 +158,10 @@ img{
         @include pad {
             height: 55px;
             line-height: 55px;            
+        }
+        @include height-landscape {
+            height: 35px;
+            line-height: 35px;             
         }         
     }
 }
@@ -194,7 +189,10 @@ img{
             }   
             @include pad-landscape {
                 margin-bottom: 1%;
-            }                         
+            }
+            @include height-landscape {
+                margin-bottom: 1%;
+            }                      
         }    
         .footer-txt{
             font-size: 12px;
@@ -205,6 +203,9 @@ img{
         bottom: 1%;
     }
     @include pad-landscape {
+        bottom: 1%;
+    }
+    @include height-landscape {
         bottom: 1%;
     }          
 }

@@ -49,12 +49,9 @@ img {
   @media (min-width: 768px) and (orientation: landscape) {
     .content {
       padding: 10% 30%; } }
-  @media (min-width: 2000px) and (orientation: landscape) {
+  @media (max-height: 310px) and (orientation: landscape) {
     .content {
-      padding: 5% 40%; } }
-  @media (max-height: 200px) and (orientation: landscape) {
-    .content {
-      padding: 5% 40%; } }
+      padding: 1% 30%; } }
 
 .logo {
   margin-bottom: 16%; }
@@ -68,7 +65,7 @@ img {
   .buttons .btn {
     height: 45px;
     line-height: 45px;
-    padding: 0 10%;
+    padding: 0;
     margin: 0 auto;
     border-radius: 5px;
     background-color: #5FA315;
@@ -89,6 +86,10 @@ img {
       .buttons .btn {
         height: 55px;
         line-height: 55px; } }
+    @media (max-height: 310px) and (orientation: landscape) {
+      .buttons .btn {
+        height: 35px;
+        line-height: 35px; } }
 
 .footer {
   width: 100%;
@@ -112,6 +113,9 @@ img {
       @media (min-width: 768px) and (orientation: landscape) {
         .footer .container .webLink {
           margin-bottom: 1%; } }
+      @media (max-height: 310px) and (orientation: landscape) {
+        .footer .container .webLink {
+          margin-bottom: 1%; } }
     .footer .container .footer-txt {
       font-size: 12px;
       margin: 0 30px; }
@@ -119,6 +123,9 @@ img {
     .footer {
       bottom: 1%; } }
   @media (min-width: 768px) and (orientation: landscape) {
+    .footer {
+      bottom: 1%; } }
+  @media (max-height: 310px) and (orientation: landscape) {
     .footer {
       bottom: 1%; } }
 
