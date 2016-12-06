@@ -141,15 +141,21 @@ img{
         &.Eng{
             margin-top: 5%;
             padding: 16px 10%;
+            @include phone-landscape {
+                padding: 11px 10%;
+            }             
         }
         &:hover{
             cursor: pointer;
         }
+        @include phone-landscape {
+            padding: 10px 10%;
+        }         
     }
 }
 .footer{
     width: 100%;
-    position: fixed;
+    position: absolute;
     bottom: 5%;
     -webkit-transform: translateZ(0);           
     .container{
@@ -166,11 +172,17 @@ img{
                 color: #fff;
                 font-size: 20px;
             }
+            @include phone-landscape {
+                margin-bottom: 1%;
+            }            
         }    
         .footer-txt{
             font-size: 12px;
             margin: 0 30px;
         }        
     }
+    @include phone-landscape {
+        bottom: 1%;
+    }      
 }
 

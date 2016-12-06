@@ -76,12 +76,18 @@ img {
     .buttons .btn.Eng {
       margin-top: 5%;
       padding: 16px 10%; }
+      @media (max-width: 767px) and (orientation: landscape) {
+        .buttons .btn.Eng {
+          padding: 11px 10%; } }
     .buttons .btn:hover {
       cursor: pointer; }
+    @media (max-width: 767px) and (orientation: landscape) {
+      .buttons .btn {
+        padding: 10px 10%; } }
 
 .footer {
   width: 100%;
-  position: fixed;
+  position: absolute;
   bottom: 5%;
   -webkit-transform: translateZ(0); }
   .footer .container {
@@ -95,8 +101,14 @@ img {
       .footer .container .webLink a {
         color: #fff;
         font-size: 20px; }
+      @media (max-width: 767px) and (orientation: landscape) {
+        .footer .container .webLink {
+          margin-bottom: 1%; } }
     .footer .container .footer-txt {
       font-size: 12px;
       margin: 0 30px; }
+  @media (max-width: 767px) and (orientation: landscape) {
+    .footer {
+      bottom: 1%; } }
 
 /*# sourceMappingURL=Brochure.css.map */
