@@ -67,7 +67,7 @@
 body{
     font-family: 'Lato';
     color: #fff;
-    background-image: url("../images/Bg_768.png");
+    background-image: url("../images/Bg_768.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -78,16 +78,16 @@ body{
     font-size: 12px;
 
     @include big-screen {
-        background-image: url("../images/Bg_1536.png");
+        background-image: url("../images/Bg_1536.jpg");
     }
     @include normal-screen {
-        background-image: url("../images/mobilebg_960.png");
+        background-image: url("../images/mobilebg_960.jpg");
     }
     @include small-screen {
-        background-image: url("../images/mobilebg_640.png");
+        background-image: url("../images/mobilebg_640.jpg");
     }
     @include xsmall-screen {
-        background-image: url("../images/mobilebg_320.png");
+        background-image: url("../images/mobilebg_320.jpg");
     }    
 
 }
